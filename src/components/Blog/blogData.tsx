@@ -5,7 +5,7 @@ const blogData: Blog[] = [
     id: 1,
     title: "Best UI components for modern websites",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "¿Quieres que tu sitio web sea rápido, atractivo y fácil de usar? Los componentes de interfaz de usuario (UI) modernos son clave para lograrlo.",
     image: "/images/blog/blog-01.webp",
     author: {
       name: "Samuyl Joshi",
