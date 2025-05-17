@@ -13,7 +13,7 @@ import { Metadata } from "next";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Pengrafic - Agencia de Marketing",
+  title: "Agencia de Marketing - Pengrafic",
   description: "Estas en Internt luego existes, somos una agencia integral creativa. Realizamos proyectos de imagen, diseño, desarrollo web, aplicasiones moviles.",
   
   other: {
