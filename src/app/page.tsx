@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "Pengrafic",
     images: [
       {
-        url: "https://pengrafic.com/images/pengrafic_flyer_face_2025.jpg", // Ruta a tu imagen para redes sociales
+        url: "https://pengrafic.com/images/pengrafic_flyer_face_2025.webp", // Ruta a tu imagen para redes sociales
         width: 1200,
         height: 630,
         alt: "Pengrafic - Agencia de Marketing Digital",
