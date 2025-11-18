@@ -1,60 +1,47 @@
-"use client";
+// app/layout.tsx
 
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import ScrollToTop from "@/components/ScrollToTop";
-import WhatsAppButton from "../components/WhatsAppButton"; // Importa el botón
+import type { Metadata } from 'next';
 import { Inter } from "next/font/google";
-import "node_modules/react-modal-video/css/modal-video.css";
-import "../styles/index.css";
-import Script from "next/script"; // 👈 Importamos el componente Script
-import { Providers } from "./providers";
+
+// Importamos el Componente de Cliente (que contendrá toda la lógica UI)
+import RootClientLayout from './RootClientLayout'; 
 
 
+// ------------------------------------------------------------------
+// 1. Definir Metadatos Globales (Favicon, Título y Verificación de Google)
+// Next.js usa este objeto para inyectar todo en la etiqueta <head>
+export const metadata: Metadata = {
+    title: 'Pengrafic: Agencia de Marketing Digital y Desarrollo Web',
+    description: 'Tu descripción del sitio web de Pengrafic...',
+    icons: {
+        icon: '/favicon.ico', // Asegúrate que este archivo está en /public
+        shortcut: '/pen2025.png',
+    },
+    verification: {
+        google: 'xIiLIUqqWxzZ6XSXF7YQ-GKiOKmlUnUdIrTsd3fnceg', // Verificación de Google
+    },
+};
+// ------------------------------------------------------------------
+
+
+// Next.js Font para pasar a los componentes de cliente
 const inter = Inter({ subsets: ["latin"] });
 
 
+// 2. Componente de Servidor que renderiza el Cliente Wrapper
 export default function RootLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-  return (
-    <html suppressHydrationWarning lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <meta name="google-site-verification" content="xIiLIUqqWxzZ6XSXF7YQ-GKiOKmlUnUdIrTsd3fnceg" />
-
-      <head />
-
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
-
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-          <ScrollToTop />
-          <WhatsAppButton /> {/* Agrega el botón aquí */}
-        </Providers>
-
-         {/* Google Analytics */}
-         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-1BDY2J5917"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-1BDY2J5917');
-          `}
-        </Script>
-      </body>
-    </html>
-  );
+    return (
+        <html suppressHydrationWarning lang="en">
+            {/* Este componente RootClientLayout contendrá la etiqueta <body> y la UI interactiva */}
+            <RootClientLayout interFont={inter}> 
+                {children}
+            </RootClientLayout>
+        </html>
+    );
 }
 
 
