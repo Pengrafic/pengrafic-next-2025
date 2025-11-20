@@ -7,8 +7,8 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Details Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Blog Details Page for Startup Nextjs Template",
+  title: "Blog Pengrafic Page | Post Actual",
+  description: "Pengrafic: Blog de diseño gráfico, desarrollo web y rendimiento en Next.js. Aprende a fusionar creatividad y código para proyectos impactantes.",
   // other metadata
 };
 

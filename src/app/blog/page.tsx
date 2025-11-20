@@ -5,8 +5,8 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Blog Page for Startup Nextjs Template",
+  title: "Blog Pengrafic | Pengrafic grid",
+  description: "Pengrafic: Blog de diseño gráfico, desarrollo web y rendimiento en Next.js. Aprende a fusionar creatividad y código para proyectos impactantes.",
   // other metadata
 };
 
@@ -15,7 +15,7 @@ const Blog = () => {
     <>
       <Breadcrumb
         pageName="Blog Grid"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="Domina el arte del diseño y la programación web con Pengrafic. Exploramos las tendencias más innovadoras en diseño gráfico, la optimización de rendimiento en Next.js, y las mejores prácticas para crear experiencias digitales impactantes. ¡Tu recurso esencial para la intersección de creatividad y código!"
       />
 
       <section className="pb-[120px] pt-[120px]">

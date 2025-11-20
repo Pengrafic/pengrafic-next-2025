@@ -28,16 +28,16 @@ const Hero = () => {
             </p>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
-                href="https://www.pengrafic.epizy.com"
+                href="Telf:51992870423"
                 className="rounded bg-primary px-8 py-4 text-base font-semibold text-white shadow-md transition hover:bg-primary/80"
               >
-                🔥 Pregúntanos
+                🔥 Llamanos
               </Link>
               <Link
                 href="https://github.com/djvamps"
                 className="rounded bg-black px-8 py-4 text-base font-semibold text-white shadow-md transition hover:bg-black/90 dark:bg-white/10 dark:hover:bg-white/20"
               >
-                Te llamamos
+                Escribenos
               </Link>
             </div>
           </motion.div>
