@@ -216,7 +216,7 @@ const Footer = () => {
             <p className="text-center text-base text-body-color dark:text-white">
               Desarrollado por{" "}
               <a
-                href="http://dalopeza.epizy.com"
+                href="https://dalopeza.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary"
