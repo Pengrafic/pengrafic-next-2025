@@ -51,7 +51,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="/"
+                    href="https://www.linkedin.com/company/pengrafic"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -89,7 +89,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="https://www.linkedin.com/company/pengrafic-s.a.c"
+                    href="https://www.linkedin.com/company/pengrafic"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
