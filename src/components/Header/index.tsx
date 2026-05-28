@@ -62,6 +62,7 @@ const Header = () => {
                   width={140}
                   height={30}
                   className="w-full dark:hidden"
+                  priority
                 />
                 <Image
                   src="/images/logo/pen.svg"
@@ -69,6 +70,7 @@ const Header = () => {
                   width={140}
                   height={30}
                   className="hidden w-full dark:block"
+                  priority
                 />
               </Link>
             </div>
