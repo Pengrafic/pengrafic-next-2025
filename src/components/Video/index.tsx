@@ -4,7 +4,8 @@ import Image from "next/image";
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 
-import ModalVideo from "react-modal-video";
+import dynamic from "next/dynamic";
+const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
 
 const Video = () => {
   const [isOpen, setOpen] = useState(false);

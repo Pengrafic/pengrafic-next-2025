@@ -25,7 +25,10 @@ export const metadata: Metadata = {
 
 
 // Next.js Font para pasar a los componentes de cliente
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+    subsets: ["latin"],
+    display: "swap",
+});
 
 
 // 2. Componente de Servidor que renderiza el Cliente Wrapper
