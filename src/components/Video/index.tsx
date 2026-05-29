@@ -3,12 +3,10 @@
 import Image from "next/image";
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
-
-import dynamic from "next/dynamic";
-const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
+import ModalVideo from "./ModalVideo";
 
 const Video = () => {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <section className="relative z-10 py-16 md:py-20 lg:py-28">
@@ -27,14 +25,17 @@ const Video = () => {
               data-wow-delay=".15s"
             >
               <div className="relative aspect-[77/40] items-center justify-center">
-                <Image src="/images/video/video.webp" alt="video Pengrafic" fill 
-                sizes="100vw"/>
-                
+                <Image
+                  src="/images/video/video.webp"
+                  alt="video Pengrafic"
+                  fill
+                  sizes="100vw"
+                />
 
                 <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
                   <button
                     aria-label="video play button"
-                    onClick={() => setOpen(true)}
+                    onClick={() => setIsOpen(true)}
                     className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-75 text-primary transition hover:bg-opacity-100"
                   >
                     <svg
@@ -54,12 +55,10 @@ const Video = () => {
       </div>
 
       <ModalVideo
-        channel="youtube"
-        autoplay={true}
-        start={true}
         isOpen={isOpen}
-        videoId="JJ0YAhghSVw"
-        onClose={() => setOpen(false)}
+        onClose={() => setIsOpen(false)}
+        videoId="dQw4w9WgXcQ"
+        channel="youtube"
       />
 
       <div className="absolute bottom-0 left-0 right-0 z-[-1] h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat"></div>
