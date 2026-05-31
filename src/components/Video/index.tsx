@@ -57,7 +57,7 @@ const Video = () => {
       <ModalVideo
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
-        videoId="dQw4w9WgXcQ"
+        videoId="JJ0YAhghSVw"
         channel="youtube"
       />
 
