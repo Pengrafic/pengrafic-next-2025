@@ -29,7 +29,7 @@ const Video = () => {
                   src="/images/video/video.webp"
                   alt="video Pengrafic"
                   fill
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, 770px"
                 />
 
                 <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">

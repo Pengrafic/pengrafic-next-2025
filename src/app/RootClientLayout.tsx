@@ -1,28 +1,22 @@
-// app/RootClientLayout.tsx
 
-"use client"; // <--- ESTO ES FUNDAMENTAL para la interacción
+// app/RootClientLayout.tsx
+"use client";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
-import WhatsAppButton from "../components/WhatsAppButton";
-
-import "../styles/index.css";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import Script from "next/script";
 import { Providers } from "./providers";
-import { Inter } from "next/font/google"; // Necesitas este import si lo usas
 
-// Definición de props
+// Definición de props (ya no necesita interFont)
 type RootClientLayoutProps = {
     children: React.ReactNode;
-    interFont: ReturnType<typeof Inter>; // Tipado para la fuente
 };
 
-
-export default function RootClientLayout({ children, interFont }: RootClientLayoutProps) {
+export default function RootClientLayout({ children }: RootClientLayoutProps) {
     return (
-        <body className={`bg-[#FCFCFC] dark:bg-black ${interFont.className}`}>
-
+        <>
             <Providers>
                 <Header />
                 {children}
@@ -31,7 +25,7 @@ export default function RootClientLayout({ children, interFont }: RootClientLayo
                 <WhatsAppButton />
             </Providers>
 
-            {/* Google Analytics - Se mantiene aquí ya que son scripts */}
+            {/* Google Analytics */}
             <Script
                 src="https://www.googletagmanager.com/gtag/js?id=G-1BDY2J5917"
                 strategy="afterInteractive"
@@ -44,6 +38,6 @@ export default function RootClientLayout({ children, interFont }: RootClientLayo
                     gtag('config', 'G-1BDY2J5917');
                 `}
             </Script>
-        </body>
+        </>
     );
 }
