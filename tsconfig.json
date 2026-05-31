@@ -2,7 +2,6 @@
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
     "baseUrl": ".",
-    "ignoreDeprecations": "6.0",  // ✅ 6.0 no 5.0
     "paths": {
       "@/*": ["./src/*"]
     },
