@@ -50,8 +50,6 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <WhatsAppButton />
-      <ScrollUp />
       <Hero />
       <Features />
       <Video />
