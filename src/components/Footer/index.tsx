@@ -27,11 +27,12 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                Desarrollo Web, comercio electrónico, aplicaciones, diseño gráfico, sonido y video (+).
+                  Desarrollo Web, comercio electrónico, aplicaciones, diseño
+                  gráfico, sonido y video (+).
                 </p>
                 <div className="flex items-center">
                   <a
-                    href="https://www.facebook.com/pengrafic3"
+                    href="https://www.facebook.com/pengrafic"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -51,7 +52,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="https://www.linkedin.com/company/pengrafic"
+                    href="https://x.com/Pengrafic"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"

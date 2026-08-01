@@ -58,44 +58,110 @@ const Pricing = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+          {/* Plan Lite */}
           <PricingBox
             packageName="Lite"
-            price={isMonthly ? "50" : "120"}
+            price={isMonthly ? "700" : "120"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Landing Page Web. Ideal para campañas específicas, lanzamientos rápidos o profesionales independientes."
+            link="https://pay.hotmart.com/F106972789V" // <-- Agregado aquí
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Diseño UX/UI 100% Personalizado" status="active" />
+            <OfferList
+              text="Estructura Enfocada en Conversión (CRO)"
+              status="active"
+            />
+            <OfferList
+              text="1 Página (Secciones ilimitadas de scroll)"
+              status="active"
+            />
+            <OfferList
+              text="Integración con Formulario y WhatsApp"
+              status="active"
+            />
+            <OfferList
+              text="Optimización de Velocidad y SEO Básico"
+              status="active"
+            />
+            <OfferList
+              text="Integración de Pasarela de Pagos / Catálogo"
+              status="inactive"
+            />
+
+            <OfferList
+              text="CMS / Gestor de Contenidos Autoadministrable"
+              status="inactive"
+            />
           </PricingBox>
+
+          {/* Plan Basic */}
           <PricingBox
             packageName="Basic"
             price={isMonthly ? "399" : "789"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="E-commerce. Ideal para marcas que buscan vender productos físicos o digitales en línea."
+            link="https://pay.hotmart.com/A106974176S"
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList
+              text="Catálogo de Productos y Carrito de Compras"
+              status="active"
+            />
+            <OfferList
+              text="Pasarela de Pagos (Stripe, PayPal, MercadoPago, etc.)"
+              status="active"
+            />
+            <OfferList text="Gestión de Inventario y Pedidos" status="active" />
+            <OfferList text="Panel Autoadministrable (CMS)" status="active" />
+            <OfferList
+              text="Integración con Pixel (Meta/Google Ads)"
+              status="active"
+            />
+            <OfferList
+              text="Capacitación de Uso para el Cliente"
+              status="active"
+            />
+            <OfferList
+              text="Arquitectura Web a Medida Completa"
+              status="inactive"
+            />
           </PricingBox>
+
+          {/* Plan Plus */}
           <PricingBox
             packageName="Plus"
-            price={isMonthly ? "589" : "999"}
+            price={isMonthly ? "1500" : "999"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Web Corporativa. Ideal para empresas consolidadas que necesitan autoridad, múltiples páginas y máxima velocidad."
+            link="https://pay.hotmart.com/T106974789Q"
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+            <OfferList
+              text="Sitio Web Multi-página (Home, Nosotros, Servicios, Blog, Contacto)"
+              status="active"
+            />
+            <OfferList
+              text="Desarrollo a Medida (High Performance)"
+              status="active"
+            />
+            <OfferList
+              text="SEO Técnico Avanzado y Optimización de Carga"
+              status="active"
+            />
+            <OfferList
+              text="Panel Autoadministrable o Blog Integrado"
+              status="active"
+            />
+            <OfferList
+              text="Integración con CRM / Email Marketing"
+              status="active"
+            />
+            <OfferList
+              text="Seguridad SSL, Dominio y Configuración de Hosting"
+              status="active"
+            />
+            <OfferList
+              text="Soporte Técnico y Garantía Post-Lanzamiento"
+              status="active"
+            />
           </PricingBox>
         </div>
       </div>
