@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
+  variable: '--font-inter',
 });
 
 export default function RootLayout({
@@ -29,26 +30,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="es">
-      <head>
-        {/* 2. Google Analytics en el Server Component */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-1BDY2J5917"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-1BDY2J5917');
-          `}
-        </Script>
-      </head>
-      <body className={`bg-[#FCFCFC] dark:bg-bg-color-dark ${inter.className}`}>
-  <RootClientLayout>{children}</RootClientLayout>
-</body>
-    </html>
+<html suppressHydrationWarning lang="es" className={inter.variable}>
+  <head>
+    {/* Google Analytics */}
+    <Script
+      src="https://www.googletagmanager.com/gtag/js?id=G-1BDY2J5917"
+      strategy="afterInteractive"
+    />
+    <Script id="google-analytics" strategy="afterInteractive">
+      {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1BDY2J5917');
+      `}
+    </Script>
+  </head>
+  <body className={`bg-[#FCFCFC] dark:bg-bg-color-dark ${inter.className}`}>
+    <RootClientLayout>{children}</RootClientLayout>
+  </body>
+</html>
   );
 }
 
