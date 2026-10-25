@@ -7,11 +7,13 @@ import "../styles/index.css";
 import RootClientLayout from "./RootClientLayout";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.pengrafic.com"),
   title: "Pengrafic: Agencia de Marketing Digital y Desarrollo Web",
   description: "Tu descripción del sitio web de Pengrafic...",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/pen2025.png",
+    apple: "/pen2025.png",
   },
   verification: {
     google: "xIiLIUqWxzZ6SXF7YQ-GKiOKmlUnUdIrTsd3fnceg",
