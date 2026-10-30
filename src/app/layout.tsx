@@ -17,10 +17,8 @@ export const metadata: Metadata = {
       { url: "/pen2025.png", sizes: "192x192", type: "image/png" },
     ],
     shortcut: "/favicon.ico",
-    apple: [
-      { url: "/pen2025.png", sizes: "180x180", type: "image/png" },
-    ],
-  }
+    apple: [{ url: "/pen2025.png", sizes: "180x180", type: "image/png" }],
+  },
   verification: {
     google: "xIiLIUqWxzZ6SXF7YQ-GKiOKmlUnUdIrTsd3fnceg",
     other: {
