@@ -11,10 +11,16 @@ export const metadata: Metadata = {
   title: "Pengrafic: Agencia de Marketing Digital y Desarrollo Web",
   description: "Tu descripción del sitio web de Pengrafic...",
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/pen2025.png",
-    apple: "/pen2025.png",
-  },
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/pen2025.png", sizes: "32x32", type: "image/png" },
+      { url: "/pen2025.png", sizes: "192x192", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/pen2025.png", sizes: "180x180", type: "image/png" },
+    ],
+  }
   verification: {
     google: "xIiLIUqWxzZ6SXF7YQ-GKiOKmlUnUdIrTsd3fnceg",
     other: {
