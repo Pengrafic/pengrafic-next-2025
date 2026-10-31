@@ -45,7 +45,7 @@ const jsonLd = {
       image: "https://pengrafic.com/og-image.jpg",
       description:
         "Agencia digital especializada en desarrollo web full-stack, diseño de marca, interfaz UI/UX y estrategias de marketing digital de alto rendimiento.",
-      telephone: "+51900000000",
+      telephone: "+51992870423",
       priceRange: "$$$",
       address: {
         "@type": "PostalAddress",
@@ -72,7 +72,7 @@ const jsonLd = {
       ],
       sameAs: [
         "https://www.facebook.com/pengrafic",
-        "https://www.instagram.com/pengrafic",
+        "https://www.instagram.com/pengrafic_",
         "https://www.linkedin.com/company/pengrafic",
       ],
       hasOfferCatalog: {
