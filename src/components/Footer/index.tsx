@@ -214,25 +214,9 @@ const Footer = () => {
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
-            <p className="text-center text-base text-body-color dark:text-white">
-              Desarrollado por{" "}
-              <a
-                href="https://dalopeza.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                Dalopeza
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://pengrafic.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                Pengrafic
-              </a>
+            <p className="text-center text-sm text-body-color dark:text-white">
+              © {new Date().getFullYear()} Pengrafic. Todos los derechos
+              reservados.
             </p>
           </div>
         </div>
